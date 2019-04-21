@@ -11,4 +11,4 @@ Completion of inner observable automatically switches to next in queue.
 Possible configuration is:
 - minimalEmissions of inner observable (default: 1)
 - exhaust queue after source completed (default: true)
-- complete last inner observable after minimal emissions after source completed (default: true)
+- complete last inner observable after minimal emissions after source completed (default: false)

@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 
-const queueMap = (innerObservable, minInnerEmissions = 1, exhaustQueue = true, completeAfterMinEmissions = true ) => (source) => {
+const queueMap = (innerObservable, minInnerEmissions = 1, exhaustQueue = true, completeAfterMinEmissions = false) => (source) => {
   return new Observable(observer => {
     const queue = [];
     let activeInnerSubscription;

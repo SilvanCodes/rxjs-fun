@@ -1,12 +1,13 @@
 {
-  "name": "rxjs_fun",
+  "name": "@silvancodes/rxjs-fun",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node src/example.js",
-    "build": "babel src --presets @babel/preset-env --out-dir dist"
+    "build": "babel src --presets @babel/preset-env --out-dir dist",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",

@@ -1,6 +1,6 @@
 import { interval, timer } from 'rxjs';
 import { take, mapTo } from 'rxjs/operators';
-import { queueMap } from './queueMap';
+import { queueMap } from './src/queueMap';
 
 // displays behavior with early completed inner observables
 interval(2000).pipe(
